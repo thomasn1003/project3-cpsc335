@@ -1,15 +1,15 @@
 def coin_change(coins, amount):
-    # Initialize dp array
-    dp = [float('inf')] * (amount + 1)
-    dp[0] = 0  # Base case: 0 coins needed for amount 0
+    # Initialize array
+    min_coins = [float('inf')] * (amount + 1)
+    min_coins[0] = 0  # Base case: 0 coins needed for amount 0
 
-    # Populate dp array using the coins
+    
     for coin in coins:
         for value in range(coin, amount + 1):
-            dp[value] = min(dp[value], dp[value - coin] + 1)
+            min_coins[value] = min(min_coins[value], min_coins[value - coin] + 1)
 
     # Check if it's possible to form the amount
-    return dp[amount] if dp[amount] != float('inf') else -1
+    return min_coins[amount] if min_coins[amount] != float('inf') else -1
 
 def main():
     # Take input from the user
