@@ -1,10 +1,5 @@
 # project3-cpsc335
 
-# Coin Change Problem
-
-## Description
-This program solves the **Coin Change Problem** using dynamic programming. It calculates the minimum number of coins needed to make up a given amount using a list of available coin denominations. If it's impossible to form the amount, it returns `-1`.
-
 ---
 
 ## How to Run
@@ -22,20 +17,37 @@ This program solves the **Coin Change Problem** using dynamic programming. It ca
 
 ---
 
+# Coin Change Problem
+
 ### Steps to Run the Program
 
-3. **Run the Program**:
+1. **Run the Program**:
    - Execute the program using Python:
      ```bash
-     python3 problem1.py
+     python3 coinChange.py
      ```
 
-4. **Provide Input**:
+2. **Provide Input**:
    - Follow the prompts to input:
      - Coin denominations as a space-separated list.
      - Target amount as a single integer.
 
-5. **View Output**:
+3. **View Output**:
    - The program will display the minimum number of coins required or indicate that it's not possible to form the amount.
+
+---
+
+# Network Delay Time
+
+### Steps to Run the Program
+
+1. **Run the Program**:
+   - Execute the program using Python:
+     ```bash
+     python3 networkDelaytime.py
+     ```
+
+2. **View Output**:
+   - The program will display the output for networkDelaytime.py
 
 ---
